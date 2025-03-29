@@ -1,20 +1,59 @@
 body {
  font: 1rem/1.5 var(--bs-font-sans-serif);
  color: var(--bs-body-color);
- background-color: var(--bs-body-bg);
+ background-color: #2b0945;
 }
+
+nav {
+ background-color: #2b0945;
+}
+nav a {
+ color: #ececec!important;
+ font-size: 1.2em;
+ font-weight: bold;
+ text-decoration: none;
+ padding: 10px 20px;
+ transition: all 0.3s ease-in-out;
+}
+
 a {
- color: var(--bs-blue);
+	color: #ffc107!important;
+	font-size: 12px;
 }
+
+a:hover {
+	color: #8f6d07!important;
+	text-decoration: none;
+}
+
+/* Definições padrões
+primary-color: #2b0945
+primary-color-light: #44285b
+area-color: #10456a;
+text-color-dark : #10456a;
+text-color-default: #fff;
+secondary-color:#ffc107
+color-buttons: #f1936f
+
+*/
+
 
 /* - padroes comuns */
 
-.subtext-blue {
+.subtext-white {
 	font-family: 'Martel Sans', sans-serif;
 	font-weight: 500;
 	font-size: 1.125em;
 	text-align: center;
-	color: #10456a;
+	color: #e6e6e6;
+}
+
+.subtext-purple {
+	font-family: 'Martel Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.125em;
+	text-align: center;
+	color: #2b0945;
 }
 .title {
 	margin-top: 30px;
@@ -27,12 +66,19 @@ a {
 	font-size: 14px;
 	color: #f1936f;
 }
-.subtext-description {
+.subtext-description-purple	{
 	font-family: 'Martel Sans', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	width: 250px;
 	text-align: center;
-	color: #10456a;
+	color: #2b0945;
+}
+
+.subtext-description {
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #e6e6e6;
 }
 
 .btn-red {
@@ -57,10 +103,18 @@ a {
 .intro {
  background: #ececec;
  display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-around;
+ flex-direction: row;
+ align-items: flex-end;
+ justify-content: center;
  padding: 30px;
+ background-color: #2b0945;
+ color: #e6e6e6;
+
+	@media ( max-width: 500px ) {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 
@@ -81,6 +135,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	padding: 10px;
+ background-color: #44285b;
 
 }
 
@@ -128,13 +183,36 @@ a {
 /* team */
 
 .team {
-	background-color: #10456a;
+	background-color: #2b0945;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 10px;
  width: 100%;
  padding: 30px;
+}
+
+.card-custom {
+	background-color: #44285b;
+	border-radius: 15px; 
+	height: 332px; 
+	color: #ececec;
+	
+	p {
+		font-size: 12px;
+		text-align: center;
+		color: #ececec!important;
+	}
+
+	a {
+		color: #ffc107!important;
+		font-size: 12px;
+	}
+
+	a:hover {
+		color: #8f6d07!important;
+		text-decoration: none;
+	}
 }
 
 
@@ -174,10 +252,10 @@ a {
 /* footer  */
 .cont-footer {
 	display: flex;
-  justify-content: flex-end;
-	color: #10456a;
+ justify-content: flex-end;
+	color: #ffc107;
 	padding: 30px 0px;
-	background-color: #ececec;
+	background-color: #2b0945;
 	}
 
 	.cont-footer li {
@@ -189,6 +267,3 @@ a {
 		height: 24px;
 		width: 24px;
 }
-
-
-	/* fim do footer e da pagina */

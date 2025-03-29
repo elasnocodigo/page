@@ -13,13 +13,13 @@
  <link rel="stylesheet" type="text/css" href="css/carousel.css">
 </head>
 
-<body class='bg-secondary-subtle'>
+<body>
 
  <header class="menu">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg nav-fill"  style="background-color: #2b0945;">
    <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-     <img src="/resource/elas-icon.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+    <a class="navbar-brand" href="#" style="color: #ffc107!important; font-size: 30px; font-family: 'Martel Sans', sans-serif;">
+     <img src="/resource/elas-icon.svg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
      Elas no código
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -29,13 +29,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-       <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+       <a class="nav-link active" aria-current="page" href="#intro">Sobre</a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#acoes">Ações</a>
       </li>
       <li class="nav-item">
        <a class="nav-link" href="#team">Time</a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="#enter">Participe</a>
+       <a class="nav-link" href="#participe">Participe</a>
       </li>
 
      </ul>
@@ -45,44 +48,45 @@
  </header>
 
  <section class="intro" data-group="intro" id="intro">
-  <div class="d-flex p-2 flex-column align-items-center justify-content-center">
-   <h3 class="subtext-blue title">Conheça nossa iniciativa online</h3>
-   <img src="/resource/img/silhuetas.png" alt="Elas no código" class="img-fluid" width="500" height="500">
-   <p>Elas no código é uma iniciativa que tem como objetivo inserir mulheres no setor da tecnologia e apoiar as que já
-    estão, empoderando-as e oferecendo mais oportunidades de conhecimento.</p>
-  </div>
+   <div class="d-flex p-2 flex-column align-items-start justify-content-center" style=" width: 50%;">
+    <h3 class="subtext-white">Olá, nós somos <br/><b style="color: #ffc107">Elas no código</b></h3>
+    <h2 class="subtext-white" style="text-align:justify;">Apoiamos e incentivamos <b style="color: #ffc107">mulheres</b> na tecnologia.</h2>
+    <p class="subtext-description" style="text-align:justify;">Acreditamos que a diversidade é fundamental e por isso, buscamos promover a inclusão de mulheres no mercado de tecnologia.</p>
+   </div>
+    <img class="img-intro" src="/resource/logo.svg" alt="logo" style="width: 230px; height: 230px; margin-left: 20px;" />
  </section>
 
 
  <section class="acoes" data-group="acoes" id="acoes">
   <div class="sub-container">
-   <h1 class="subtext-blue title " style="color: #fff">Nossas ações</h1>
-   <h2 class="subtext-blue" style="color: #fff">Conheça nosso trabalho</h2>
+   <h1 class="subtext-white title ">Nossas <b style="color: #ffc100">ações</b></h1>
+   <h2 class="subtext-white">Conheça nosso trabalho</h2>
 
    <ul class="acoes-container" data-anime="scroll">
 
     <li class="acoes-item">
-     <img class="acoes-prices" src="/resource/img/broadcast.png" alt="podcast" style="width: 100px; height: 100px;">
+     <div class="subtext-purple title" style="margin-top: 0px !important;">Podcast elas no código</div>
+     <img class="acoes-prices" src="/resource/img/broadcast.png" alt="podcast" style="width: 132px; height: 132px; margin-bottom:30px">
+     <span class="subtext-red" style="margin: 0px !important;">Em breve!</span>
      <div class="subtext-red">Gratuíto</div>
-     <div class="subtext-blue title" style="margin-top: 0px !important;">Podcast elas no código</div>
-     <h3 class="subtext-description">Disponível no seu agregador de streamings</h3>
+     <h3 class="subtext-description-purple">Disponível no seu agregador de streamings</h3>
     </li>
     <li class="acoes-item">
-     <img class="acoes-prices" src="/resource/img/equipe.png" alt="cursos" style="width: 100px; height: 100px;">
-     <div class="subtext-red">Matrículas encerradas</div>
-     <div class="subtext-blue title" style="margin-top: 0px !important;">Cursos de javascript e java</div>
-     <h3 class="subtext-description" style="margin: 0px !important;">Gratuíto</h3>
-     <h3 class="subtext-description" style="margin: 0px !important;">Estudo personalizado e direcionado a suas
+     <div class="subtext-purple title" style="margin-top: 0px !important;">Cursos de javascript e java</div>
+     <img class="acoes-prices" src="/resource/img/equipe.png" alt="cursos" style="width: 132px; height: 132px; margin-bottom:30px">
+     <span class="subtext-red">Matrículas encerradas</span>
+     <span class="subtext-red" style="margin: 0px !important;">Gratuíto</span>
+     <h3 class="subtext-description-purple" style="margin: 0px !important;">Estudo personalizado e direcionado a suas
       necessidades</h3>
     </li>
     <li class="acoes-item">
+     <div class="subtext-purple title" style="margin-top: 0px !important;">Encontros e lives</div>
      <img class="acoes-prices" src="/resource/img/lista-de-controle.png" alt="cursos"
-      style="width: 100px; height: 100px;">
-     <div class="subtext-red">Gratuíto</div>
-     <div class="subtext-blue title" style="margin-top: 0px !important;">Encontros</div>
-     <h3 class="subtext-description" style="margin: 0px !important;">3 encontros</h3>
-     <h3 class="subtext-description" style="margin: 0px !important;">Acesse aqui todos os encontros</h3>
-     <h3 class="subtext-description" style="margin: 0px !important;">Disponível no you tube</h3>
+     style="width: 132px; height: 132px; margin-bottom:30px">
+     <span class="subtext-red" style="margin: 0px !important;">3 encontros</span>
+     <span class="subtext-red">Gratuíto</span>
+     <h3 class="subtext-description-purple" style="margin: 0px !important;">Acesse aqui todos os encontros</h3>
+     <h3 class="subtext-description-purple" style="margin: 0px !important;">Disponível no you tube</h3>
     </li>
    </ul>
 
@@ -93,105 +97,105 @@
 
  <section class="team" data-group="team" id="team">
   <div class="sub-container">
-   <h1 class="subtext-blue title " style="color: #fff">Nosso time</h1>
-   <h2 class="subtext-blue" style="color: #fff">Conheça nossas voluntárias e conecte-se</h2>
+   <h1 class="subtext-white title ">Nosso  <b style="color: #ffc107">time</b></h1>
+   <h2 class="subtext-white" style="margin-bottom: 32px">Conheça nossas voluntárias e conecte-se</h2>
   </div>
 
   <div class="container text-center">
-   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
     <div class="col">
-     <div class="card" style="border-radius: 15px; height: 332px">
+     <div class="card card-custom">
       <div class="card-body text-center">
        <div class="mt-3 mb-4">
         <img src="/resource/female-avatar.svg" class="rounded-circle img-fluid"
          style="width: 100px; background-color: darkgray;" />
        </div>
        <h4 class="mb-2">Ana Carolina</h4>
-       <p class="text-muted mb-4">@Data Engineer <span class="mx-2">|</span> <a href="#!">mdbootstrap.com</a></p>
+       <p class="text-muted mb-4">@Data Engineer <span class="mx-2">|</span> <a href="#!">carol.silva@elasnocodigo.com.br</a></p>
       </div>
      </div>
     </div>
     <div class="col">
-     <div class="card" style="border-radius: 15px; height: 332px">
+    <div class="card card-custom">
       <div class="card-body text-center">
        <div class="mt-3 mb-4">
         <img src="/resource/female-avatar.svg" class="rounded-circle img-fluid"
          style="width: 100px; background-color: darkgray;" />
        </div>
        <h4 class="mb-2">Flavia Goffi</h4>
-       <p class="text-muted mb-4">@Volunter <span class="mx-2">|</span> <a href="#!">mdbootstrap.com</a></p>
+       <p class="text-muted mb-4">@Volunter <span class="mx-2">|</span> <a href="#!">Não informado</a></p>
       </div>
      </div>
     </div>
     <div class="col">
-     <div class="card" style="border-radius: 15px; height: 332px">
+    <div class="card card-custom">
       <div class="card-body text-center">
        <div class="mt-3 mb-4">
         <img src="/resource/female-avatar.svg" class="rounded-circle img-fluid"
          style="width: 100px; background-color: darkgray;" />
        </div>
        <h4 class="mb-2">Josilene Fernandes</h4>
-       <p class="text-muted mb-4">@QA engineer <span class="mx-2">|</span> <a href="#!">mdbootstrap.com</a></p>
+       <p class="text-muted mb-4">@QA engineer <span class="mx-2">|</span> <a href="#!">josilene.fernandes@elasnocodigo.com.br</a></p>
       </div>
      </div>
     </div>
     <div class="col">
-     <div class="card" style="border-radius: 15px; height: 332px">
+    <div class="card card-custom">
       <div class="card-body text-center">
        <div class="mt-3 mb-4">
         <img src="/resource/female-avatar.svg" class="rounded-circle img-fluid"
          style="width: 100px; background-color: darkgray;" />
        </div>
        <h4 class="mb-2">Kátia Cibele</h4>
-       <p class="text-muted mb-4">@Dev Fullstack <span class="mx-2">|</span> <a href="#!">mdbootstrap.com</a></p>
+       <p class="text-muted mb-4">@Dev Fullstack <span class="mx-2">|</span> <a href="#!">katia@elasnocodigo.com.br</a></p>
       </div>
      </div>
     </div>
     <div class="col">
-     <div class="card" style="border-radius: 15px; height: 332px">
+    <div class="card card-custom">
       <div class="card-body text-center">
        <div class="mt-3 mb-4">
         <img src="/resource/female-avatar.svg" class="rounded-circle img-fluid"
          style="width: 100px; background-color: darkgray;" />
        </div>
        <h4 class="mb-2">Karoline Farias</h4>
-       <p class="text-muted mb-4">@Data Scientist <span class="mx-2">|</span> <a href="#!">mdbootstrap.com</a></p>
+       <p class="text-muted mb-4">@Data Scientist <span class="mx-2">|</span> <a href="#!">karoline.farias@elasnocodigo.com.br</a></p>
       </div>
      </div>
     </div>
     <div class="col">
-     <div class="card" style="border-radius: 15px; height: 332px">
+    <div class="card card-custom">
       <div class="card-body text-center">
        <div class="mt-3 mb-4">
         <img src="/resource/female-avatar.svg" class="rounded-circle img-fluid"
          style="width: 100px; background-color: darkgray;" />
        </div>
        <h4 class="mb-2">Marina Jacauna</h4>
-       <p class="text-muted mb-4">@Cientista <span class="mx-2">|</span> <a href="#!">mdbootstrap.com</a></p>
+       <p class="text-muted mb-4">@Cientista <span class="mx-2">|</span> <a href="#!">Não informado</a></p>
       </div>
      </div>
     </div>
     <div class="col">
-     <div class="card" style="border-radius: 15px; height: 332px">
+    <div class="card card-custom">
       <div class="card-body text-center">
        <div class="mt-3 mb-4">
         <img src="/resource/female-avatar.svg" class="rounded-circle img-fluid"
          style="width: 100px; background-color: darkgray;" />
        </div>
        <h4 class="mb-2">Stefani Diniz</h4>
-       <p class="text-muted mb-4">@Software engineer <span class="mx-2">|</span> <a href="#!">mdbootstrap.com</a></p>
+       <p class="text-muted mb-4">@Software engineer <span class="mx-2">|</span> <a href="#!">Não informado</a></p>
       </div>
      </div>
     </div>
     <div class="col">
-     <div class="card" style="border-radius: 15px; height: 332px">
+    <div class="card card-custom">
       <div class="card-body text-center">
        <div class="mt-3 mb-4">
         <img src="/resource/female-avatar.svg" class="rounded-circle img-fluid"
          style="width: 100px; background-color: darkgray;" />
        </div>
        <h4 class="mb-2">Wanessa</h4>
-       <p class="text-muted mb-4">@Developer Analyst <span class="mx-2">|</span> <a href="#!">mdbootstrap.com</a></p>
+       <p class="text-muted mb-4">@Developer Analyst <span class="mx-2">|</span> <a href="#!">wanessa.costa@elasnocodigo.com.br</a></p>
       </div>
      </div>
     </div>
@@ -204,15 +208,15 @@
  <section class="contratar" data-group="participe" id="participe">
   <ul style="display: flex; flex-direction: column; margin-right: 20px; list-style: none; margin-bottom: 32px;">
    <li><a href="https://www.linkedin.com/company/elas-no-codigo" target="_blank"> <img class="img-social"
-      src="/resource/img/linkedin.png" style="width: 60px; height:60px;"></a> <p> Conecte-se com a gente</p></li>
-   <li><a href="https://www.linkedin.com/company/elas-no-codigo" target="_blank"> <img class="img-social"
-      src="/resource/img/003-facebook.png"  style="width: 60px; height:60px;"></a><p>Siga nossa página</p></li>
-   <li><a href="https://www.linkedin.com/company/elas-no-codigo" target="_blank"> <img class="img-social"
-      src="/resource/img/002-instagram.png" style="width: 60px; height:60px;"></a><p> Acompanhe nossas ções</p></li>
+      src="/resource/img/linkedin.png" style="width: 60px; height:60px;"> <p> Conecte-se no linkedin</p></a></li>
+   <li><a href="https://www.facebook.com/people/Elas-no-c%C3%B3digo/61573927546100/" target="_blank"> <img class="img-social"
+      src="/resource/img/003-facebook.png"  style="width: 60px; height:60px;"><p>Siga nossa página</p></a></li>
+   <li><a href="https://www.instagram.com/elasnocodigo/" target="_blank"> <img class="img-social"
+      src="/resource/img/002-instagram.png" style="width: 60px; height:60px;"><p> Acompanhe nossas ações</p></a></li>
   </ul>
   <div class="contratar-container">
    <div class="subtext-red" style="margin: 0px;">Conecte-se com a gente</div>
-   <h1 class="subtext-blue title " style="margin: 0px;">E acompanhe nossas ações</h1>
+   <h1 class="subtext-white title " style="margin: 0px;">E acompanhe nossas ações</h1>
   </div>
  </section>
 
@@ -221,12 +225,7 @@
 </body>
 
 <footer class="cont-footer">
- <ul style="display: flex;">
-  <li><a href="#minhaconta">Contato</a></li>
-  <li><a href="#minhaconta">Politica&Privacidade</a></li>
-  <li><a href="#minhaconta">About</a></li>
- </ul>
-
+  <p><b>Feito por</b> Kátia Cibele 🚀</p>
 </footer>
 
 </html>
