@@ -1,0 +1,194 @@
+body {
+ font: 1rem/1.5 var(--bs-font-sans-serif);
+ color: var(--bs-body-color);
+ background-color: var(--bs-body-bg);
+}
+a {
+ color: var(--bs-blue);
+}
+
+/* - padroes comuns */
+
+.subtext-blue {
+	font-family: 'Martel Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.125em;
+	text-align: center;
+	color: #10456a;
+}
+.title {
+	margin-top: 30px;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 1.7em;
+}
+.subtext-red {
+	text-transform: capitalize;
+	font-size: 14px;
+	color: #f1936f;
+}
+.subtext-description {
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 10px;
+	width: 250px;
+	text-align: center;
+	color: #10456a;
+}
+
+.btn-red {
+  margin: 0 10px;
+  padding: 5px 16px;
+	font-family: 'Martel Sans', sans-serif;
+  background-color: #f1936f;
+  color:  #fff;
+  border-radius: 20px;
+}
+
+.btn-red a {
+  padding: 0px;
+  margin: 0;
+}
+
+
+
+
+/*introdução*/
+
+.intro {
+ background: #ececec;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+ padding: 30px;
+}
+
+
+.intro img {
+ margin-top: 30px;
+ height: 200px;
+ width: 200px;
+}
+
+/*fim da introdução*/
+
+/** ações **/ 
+
+
+.acoes {
+	background-color: #10456a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+
+}
+
+.acoes-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+	position: relative;
+}
+
+@media ( max-width: 800px ) {
+	.acoes-container {
+	  display: flex;
+	  flex-direction: column;
+	}
+}
+
+.acoes-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	padding: 20px;
+	margin: 20px;
+	width: 300px;
+	height: 340px;
+	transition: 300ms transform ease-in-out;
+}
+
+.acoes-item:hover {
+	transform: scale(1.1);
+}
+
+.img-acoes  {
+	display: block;
+	height: 160px;
+	width: 160px;
+	margin-bottom: 20px;
+}
+
+
+/* FIM ações */
+/* team */
+
+.team {
+	background-color: #10456a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+ width: 100%;
+ padding: 30px;
+}
+
+
+/* FIM Team
+/* contratar */
+.contratar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media ( max-width: 800px ) {
+	.contratar {
+	  display: flex;
+	  flex-direction: column;
+	}
+}
+
+
+.contratar-container {
+	height: 420px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+
+.img-contratar {
+	display: block;
+	height: 420px;
+	width: 240px;
+	margin-bottom: 20px;
+}
+
+/* footer  */
+.cont-footer {
+	display: flex;
+  justify-content: flex-end;
+	color: #10456a;
+	padding: 30px 0px;
+	background-color: #ececec;
+	}
+
+	.cont-footer li {
+		margin:  10px ;
+		cursor: pointer;
+
+	}
+.img-social {
+		height: 24px;
+		width: 24px;
+}
+
+
+	/* fim do footer e da pagina */
